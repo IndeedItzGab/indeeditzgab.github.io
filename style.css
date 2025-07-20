@@ -14,6 +14,10 @@
   src: url(/assets/fonts/Finlikless-Regular.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   background-color: #040712;
@@ -53,6 +57,14 @@ header button {
   font-size: 0.85em;
 }
 
+header .title {
+  font-family: raintion;
+  position: absolute;
+  top: -0.75em;
+  left: 1.2em;
+  font-size: 4em;
+}
+
 header button img {
   width: inherit;
   height: inherit;
@@ -82,7 +94,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100em;
+  height: 80em;
 }
 
 .highlight {
@@ -112,16 +124,119 @@ main {
   font-weight: 1;
 }
 
-#projects-frame {
+#pages-frame {
   border-top: 1px solid white;
+  border-bottom: 1px solid white;
   position: absolute;
   background-color: rgb(1, 2, 37);
   width: 100%;
-  height: 50em;
+  height: 20em;
   overflow: hidden;
 }
 
-#projects-frame .ch1 {
+#pages-frame .ch1 {
   margin-top: 0.3em;
   margin-left: 0.6em;
+}
+
+#pages-frame button {
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1em;
+  width: 95%;
+  box-shadow: 2px 2px 20px black;
+  transition: box-shadow 0.5s ease;
+}
+
+#pages-frame button svg {
+  position: inherit;
+  fill: white;
+  width: 2.5em;
+  height: auto;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#pages-frame button .title {
+  position: inherit;
+  font-size: 2em;
+  left: 2em;
+  top: -0.6em;
+}
+
+#pages-frame button .description {
+  font-family: poppins-regular;
+  position: inherit;
+  text-align: left;
+  font-size: 0.8em;
+  left: 5em;
+  top: 2em;
+  color: rgb(220, 227, 255);
+  line-height: 1em;
+}
+
+#contact-frame {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 65em;
+  left: 0;
+}
+
+#contact-frame .ch1 {
+  margin-left: 0.6em;
+}
+
+#contact-frame .description {
+  font-family: poppins-regular;
+  color: rgb(220, 227, 255);
+  margin-left: 3em;
+}
+
+#contact-frame svg {
+  fill: white;
+  height: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#contact-frame div {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 2em;
+  margin-left: 1.0em;
+}
+
+#contact-frame div a {
+  position: relative;
+  top: 0.2em;
+}
+
+#contact-frame div a svg {
+  transition: fill 0.5s ease, transform 0.5s ease;
+  font-size: 0.5em;
+}
+
+#contact-frame div #tiktokIcon svg {
+  margin-bottom: 0.1em;
+  height: 1.7em;
+}
+
+#contact-frame div #paypalIcon svg {
+  height: 1.9em;
+}
+
+#contact-frame div #kofiIcon svg {
+  height: 2.2em;
+}
+
+#contact-frame div #curseforgeIcon svg {
+  margin-bottom: -0.15em;
+  height: 2.5em;
 }
