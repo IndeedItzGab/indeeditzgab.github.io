@@ -1,0 +1,7 @@
+@media screen and (max-width: 800px) {
+  #introduction-frame {
+    position: absolute;
+    top: -14em;
+    left: 0;
+  }
+}

@@ -1,0 +1,84 @@
+main {
+  height: auto;
+}
+
+footer {
+  position: relative;
+  bottom: -15em;
+}
+
+#introduction-frame { 
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+  justify-items: center;
+}
+
+#work-frame {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  top: 5em;
+  width: 100%;
+  height: auto;
+  padding-top: 5.5em;
+  padding-bottom: 5em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+  gap: 2em;
+}
+
+#work-frame .ch1 {
+    position: absolute;
+  left: 0.5em;
+  top: 0.2em;
+}
+
+#work-frame button {
+  overflow: hidden;
+  width: 15em;
+  height: 15em;
+  box-shadow: 2px 2px 20px black;
+  transition: box-shadow 0.5s ease;
+}
+
+#work-frame button .thumbnail {
+  position: relative;
+  background-color: rgb(50, 0, 0);
+  width: 15em;
+  height: 5em;
+  left: -0.3em;
+  top: -0.7em;
+  object-fit: contain;
+}
+
+#work-frame button .icon {
+  border-radius: 20em;
+  outline: 1px solid white;
+  position: relative;
+  left: -4.2em;
+  top: -4em;
+  width: 5em;
+  height: 5em;
+}
+
+#work-frame button .title {
+  position: relative;
+  top: -4.7em;
+  left: 3.7em;
+  width: 6em;
+  font-size: 1.45em;
+}
+
+#work-frame button .description {
+  width: 19em;
+  text-align: left;
+  color: rgb(190, 173, 255);
+  font-size: 0.7em;
+  margin-left: 1em;
+  position: relative;
+  top: -11em;
+}

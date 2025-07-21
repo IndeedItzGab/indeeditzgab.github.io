@@ -197,7 +197,7 @@ main {
   margin-left: 3em;
 }
 
-#contact-frame svg {
+#contact-frame div a svg {
   fill: white;
   height: 2em;
   margin-left: 1em;
