@@ -4,4 +4,15 @@
     top: -14em;
     left: 0;
   }
+
+  #work-frame button .icon {
+    left: -4.5em;
+  }
+
+  #work-frame button .title {
+    width: 5.8em;
+    height: 0.8em;
+    word-break:break-all;
+    overflow: scroll;
+  }
 }
