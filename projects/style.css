@@ -3,18 +3,22 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   position: relative;
   bottom: -15em;
 }
 
 #introduction-frame { 
-  margin-left: 0;
+  display: flex;
   width: 100%;
   height: auto;
   justify-items: center;
+  justify-content: center;
 }
 
-#work-frame {
+.mainContainer {
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -31,13 +35,16 @@ footer {
   gap: 2em;
 }
 
-#work-frame .ch1 {
-    position: absolute;
+.mainContainer .ch1 {
+  position: absolute;
   left: 0.5em;
   top: 0.2em;
 }
 
-#work-frame button {
+.mainContainer button {
+  position: relative;
+  display: block;
+  justify-content: flex-start;
   overflow: hidden;
   width: 22em;
   height: 8em;
@@ -45,42 +52,46 @@ footer {
   transition: box-shadow 0.5s ease;
 }
 
-#work-frame button .thumbnail {
-  position: relative;
+.mainContainer button .thumbnail {
+  flex-shrink: 0;
   background-color: rgb(50, 0, 0);
-  width: 102.5%;
-  height: 5em;
-  left: -0.25em;
-  top: -0.7em;
+  position: absolute;
+  width: 100%;
+  height: 4.5em;
+  top: 0;
+  left: 0;
   object-fit: contain;
 }
 
-#work-frame button .icon {
+.mainContainer button .icon {
   border-radius: 20em;
   outline: 1px solid white;
-  position: relative;
-  left: -7.2em;
-  top: -4em;
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
   width: 5em;
   height: 5em;
 }
 
-#work-frame button .title {
+.mainContainer button .title {
   text-align: left;
-  position: relative;
-  top: -4.9em;
-  left: 4.2em;
+  position: absolute;
+  top: 2.2em;
+  left: 4.5em;
   width: 10em;
   font-size: 1.45em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-#work-frame button .tags {
+.mainContainer button .languages {
   overflow: auto;
-  position: relative;
-  top: -8.3em;
-  left: 6em;
-  scrollbar-width: none;
   display: flex;
+  position: absolute;
+  top: 6em;
+  left: 6.5em;
+  scrollbar-width: none;
   justify-content: left;
   width: 15em;
   height: 1.3em;
@@ -88,7 +99,7 @@ footer {
   gap: 0.2em;
 }
 
-#work-frame button .tags p {
+.mainContainer button .languages p {
   position: relative;
   background-color: rgb(33, 33, 70);
   width: auto;
@@ -101,6 +112,6 @@ footer {
   border: 1px solid white;
 }
 
-.contribution-color {
+#contribution-frame {
   background-color: rgb(0, 1, 43);
 }

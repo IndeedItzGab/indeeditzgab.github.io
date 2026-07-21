@@ -7,8 +7,8 @@
     <link type="text/css" rel="stylesheet" href="../style.css">
     <link type="text/css" rel="stylesheet" href="../size.css">
     <link rel="stylesheet" type="text/css" href="../animation.css">
-    <link rel="icon" href="../assets/images/icon.png" type="image/png">
-    <script src="../script.js"></script>
+    <link rel="icon" href="../assets/images/icons/icon.png" type="image/png">
+    <script type="module" src="./script.js"></script>
 
     <link type="text/css" rel="stylesheet" href="./style.css">
     <link type="text/css" rel="stylesheet" href="./size.css">
@@ -17,7 +17,7 @@
   <body>
     <header>
       <button>
-        <img src="../assets/images/icon.png">
+        <img src="../assets/images/icons/icon.png">
       </button>
       <p class="title">PROJECTS</p>
     </header>
@@ -26,73 +26,19 @@
       <div id="introduction-frame">
         <h4>In this page, it show all of my projects and contributions that are made for fun and knowledge.</h4>
       </div>
-      <div id="work-frame">
+      <div id="work-frame" class="mainContainer">
         <p class="ch1">WORK</p>
-        <button onclick="window.location.href='https://github.com/IndeedItzGab/LandLocker'">
-          <img class="thumbnail" src=""/>
-          <img class="icon" src="../assets/images/landlocker-icon.png"/>
-          <p class="title">LandLocker</p>
-          <div class="tags">
-            <p>JavaScript</p>
-          </div>
-        </button>
-        <button onclick="window.location.href='https://github.com/IndeedItzGab/BedrockTeams'">
-          <img class="thumbnail" src=""/>
-          <img class="icon" src="../assets/images/bedrockteams-icon.png"/>
-          <p class="title">BedrockTeams</p>
-          <div class="tags">
-            <p>JavaScript</p>
-          </div>
-        </button>
-        <button onclick="window.location.href='https://github.com/IndeedItzGab/Bedrock-TPA'">
-          <img class="thumbnail" src=""/>
-          <img class="icon" src="../assets/images/bedrocktpa-icon.png"/>
-          <p class="title">BedrockTPA</p>
-          <div class="tags">
-            <p>JavaScript</p>
-          </div>
-        </button>
-        <button onclick="window.location.href='https://github.com/IndeedItzGab/DiscordCC'">
-          <img class="thumbnail" src=""/>
-          <img class="icon" src="../assets/images/discordcc-icon.png"/>
-          <p class="title">DiscordCC</p>
-          <div class="tags">
-            <p>JavaScript</p>
-          </div>
-        </button>
-        <button onclick="window.location.href='https://github.com/IndeedItzGab/Spawn-Randomizer'">
-          <img class="thumbnail" src=""/>
-          <img class="icon" src="../assets/images/spawnrandomizer-icon.png"/>
-          <p class="title">Spawn-Randomizer</p>
-          <div class="tags">
-            <p>JavaScript</p>
-          </div>
-        </button>
-        <button id="newb-x-supplementary" onclick="window.location.href='https://github.com/IndeedItzGab/Newb-X-Supplementary'">
-          <img class="thumbnail" src=""/>
-          <img class="icon" src="../assets/images/newbsup-icon.png"/>
-          <p class="title">Newb X Supplementary</p>
-          <div class="tags">
-            <p>GLSL</p>
-          </div>
-        </button>
         <div class="darken-effect"></div>
       </div>
-      <div id="work-frame" class="contribution-color">
+      <div id="contribution-frame" class="mainContainer">
         <p class="ch1">CONTRIBUTIONS</p>
-        <button id="newb-x-legacy" onclick="window.location.href='https://github.com/IndeedItzGab/LandLocker'">
-          <img class="thumbnail" src=""/>
-          <img class="icon" src="../assets/images/newb-icon.gif"/>
-          <p class="title">Newb X Legacy</p>
-          <div class="tags">
-            <p>GLSL</p>
-          </div>
-        </button>
         <div class="darken-effect"></div>
       </div>
     </main>
     <footer>
-      <p>Copyright © IndeedItzGab, All rights reserved.</p>
+      <p>Copyright © IndeedItzGab, All rights reserved. <br>
+        This site is not associated to Mojang or Microsoft.
+      </p>
     </footer>
   </body>
 </html>

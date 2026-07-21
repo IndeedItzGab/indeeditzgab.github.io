@@ -2,14 +2,13 @@
   #introduction-frame {
     position: absolute;
     top: -14em;
-    left: 0;
   }
 
-  #work-frame button .icon {
-    left: -4.5em;
+  .mainContainer button .icon {
+    left: 5%;
   }
 
-  #work-frame button .title {
+  .mainContainer button .title {
     width: 5.8em;
     height: 0.8em;
     word-break:break-all;
