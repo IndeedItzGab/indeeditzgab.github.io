@@ -2,6 +2,7 @@ export default {
   projects: [
     { 
       title: "EssentialCC",
+      description: "",
       link: "https://github.com/IndeedItzGab/EssentialCC",
       images: {
         icon: "https://raw.githubusercontent.com/IndeedItzGab/EssentialCC/refs/heads/main/BP/pack_icon.png",
@@ -13,6 +14,7 @@ export default {
     },
     { 
       title: "BedrockTeams",
+      description: "",
       link: "https://github.com/IndeedItzGab/BedrockTeams",
       images: {
         icon: "https://raw.githubusercontent.com/IndeedItzGab/BedrockTeams/refs/heads/main/BP/pack_icon.png",
@@ -24,6 +26,7 @@ export default {
     },
     { 
       title: "DiscordCC",
+      description: "",
       link: "https://github.com/IndeedItzGab/DiscordCC",
       images: {
         icon: "https://raw.githubusercontent.com/IndeedItzGab/DiscordCC/refs/heads/main/src/BP/pack_icon.png",
@@ -35,6 +38,7 @@ export default {
     },
     { 
       title: "LandLocker",
+      description: "",
       link: "https://github.com/IndeedItzGab/LandLocker",
       images: {
         icon: "../assets/images/icons/landlocker.png",
@@ -46,6 +50,7 @@ export default {
     },
     { 
       title: "BedrockTPA",
+      description: "",
       link: "https://github.com/IndeedItzGab/Bedrock-TPA",
       images: {
         icon: "https://raw.githubusercontent.com/IndeedItzGab/bedrock-tpa/refs/heads/main/BP/pack_icon.png",
@@ -57,6 +62,7 @@ export default {
     },
     { 
       title: "Spawn-Randomizer",
+      description: "",
       link: "https://github.com/IndeedItzGab/Spawn-Randomizer",
       images: {
         icon: "https://raw.githubusercontent.com/IndeedItzGab/Spawn-Randomizer/refs/heads/main/BP/pack_icon.png",
@@ -68,6 +74,7 @@ export default {
     },
     { 
       title: "Runtime AntiXray",
+      description: "",
       link: "https://github.com/IndeedItzGab/Runtime-AntiXray",
       images: {
         icon: "https://raw.githubusercontent.com/IndeedItzGab/Runtime-AntiXray/refs/heads/main/BP/pack_icon.png",
@@ -79,6 +86,7 @@ export default {
     },
     { 
       title: "Newb X Supplementary",
+      description: "",
       link: "https://www.curseforge.com/minecraft-bedrock/texture-packs/newb-x-supplementary",
       images: {
         icon: "https://media.forgecdn.net/avatars/thumbnails/1912/890/256/256/639193362598341444.png",
@@ -87,11 +95,24 @@ export default {
       languages: [
         "GLSL"
       ] 
+    },
+    { 
+      title: "Config-Parser",
+      description: "",
+      link: "https://github.com/IndeedItzGab/config-parser",
+      images: {
+        icon: "",
+        thumbnail: ""
+      },
+      languages: [
+        "Python", "JavaScript", "HTML", 'SCSS'
+      ] 
     }
   ],
   contributions: [
     { 
       title: "Newb Classic",
+      description: "",
       link: "https://github.com/devendrn/newb-x-mcbe",
       images: {
         icon: "../assets/images/icons/newb.gif",

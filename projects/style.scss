@@ -1,0 +1,115 @@
+@use "../structure";
+main {
+  height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  bottom: -15em;
+}
+
+#introduction-frame { 
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  top: 5em;
+  width: 100%;
+  height: auto;
+  padding-top: 5.5em;
+  padding-bottom: 5em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+  gap: 2em;
+
+  .ch1 {
+    position: absolute;
+    left: 0.5em;
+    top: 0.2em;
+  }
+
+  button {
+    position: relative;
+    display: block;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 22em;
+    height: 8em;
+    box-shadow: 2px 2px 20px black;
+    transition: box-shadow 0.5s ease;
+    .thumbnail {
+      flex-shrink: 0;
+      background-color: rgb(50, 0, 0);
+      position: absolute;
+      width: 100%;
+      height: 4.5em;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+
+    .icon {
+      border-radius: 20em;
+      outline: 1px solid white;
+      position: absolute;
+      top: 1.5em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+    }
+
+    .title {
+      text-align: left;
+      position: absolute;
+      top: 2.2em;
+      left: 4.5em;
+      width: 10em;
+      font-size: 1.45em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .languages {
+      overflow: auto;
+      display: flex;
+      position: absolute;
+      top: 6em;
+      left: 6.5em;
+      scrollbar-width: none;
+      justify-content: left;
+      width: 15em;
+      height: 1.3em;
+      flex-wrap: wrap;
+      gap: 0.2em;
+      p {
+        position: relative;
+        background-color: rgb(33, 33, 70);
+        width: auto;
+        font-size: 0.7em;
+        height: 0.7em;
+        top: 1.2em;
+        margin-top: -1em;
+        padding: 0.3em;
+        border-radius: 5px;
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+#contribution-frame {
+  background-color: rgb(0, 1, 43);
+}
