@@ -1,0 +1,172 @@
+@font-face {
+  font-family: handsome;
+  src: url();
+}
+
+@media screen and (max-width: 1000px) {
+  #template {
+    display: none;
+  }
+
+  #template-label {
+    font-size: 5em;
+    display: block;
+    padding: 20px 30px;
+    background: #000217;
+    color: white;
+    margin-top:10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial;
+    outline: 2px solid white;
+  }
+
+  #container {
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: #00031c;
+    border-radius: 20px;
+    outline: white solid 1px;
+    padding: 2%;
+    width: 90%;
+  }
+
+  #container #finalDiv input {
+    border-radius: 20px;
+    height: 2em;
+    font-size: 3em;
+  }
+
+  #container label {
+    font-size: 4em;
+  }
+
+  #container span {
+    font-size: 5em;
+  }
+
+  #container div span {
+    font-size: 3em;
+  }
+
+  #container .input {
+    font-size: 4em;
+    width: 99%;
+    height: 2em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #template {
+    display: none;
+  }
+
+  #container span {
+    font-size: 2em;
+  }
+
+  #template-label {
+    font-size: 1em;
+    display: block;
+    padding: 20px 30px;
+    background: #000217;
+    color: white;
+    margin-top:10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial;
+    outline: 2px solid white;
+  }
+
+  #container {
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: #00031c;
+    border-radius: 20px;
+    outline: white solid 1px;
+    padding: 2%;
+    width: 25em;
+  }
+
+  #container #finalDiv input {
+    border-radius: 5px;
+    height: 2em;
+    font-size: 1em;
+  }
+
+  #container div span {
+    font-size: 15px;
+  }
+
+  #container .input {
+    font-size: 15px;
+    width: 98%;
+    height: 30px;
+  }
+
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111111;
+  background-image:  linear-gradient(to right, rgba(15,46,74,0), rgba(15,46,74,255));;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container span {
+  color: white;
+}
+
+#container {
+  margin-top: 2em;
+  display: none;
+  box-shadow: 5px 5px 10px black;
+}
+
+  #container .input {
+    border-radius: 0.5em;
+  }
+
+#container label {
+  color: white;
+}
+
+#container div span {
+  color: #ababab;
+}
+
+#container div {
+  padding-top: 10px;
+  width: 100%;
+}
+
+#container #finalDiv {
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+}
+
+#container #finalDiv input {
+  border: none;
+  outline: 0.5px solid white;
+  color: white;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#container #finalDiv #submitButton {
+  background-color: #002540;
+}
+
+#container #finalDiv #resetButton {
+  background-color: #960000;
+}
