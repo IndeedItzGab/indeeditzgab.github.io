@@ -59,6 +59,8 @@ export class Generator {
       e.preventDefault();
       this.formData = new FormData(this.container);
 
+      console.info(this.configData);
+
       // Format input error checker
       if(!this.isCorrect())
         return alert("The value is wrong!!!!!!!!!!!!!!");
