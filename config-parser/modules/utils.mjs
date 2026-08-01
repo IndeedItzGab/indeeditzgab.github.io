@@ -84,7 +84,7 @@ export class Generator {
       }
 
       // Request from the image generator to generate the information from inputs
-      const response = await fetch("https://config-parser-sepia.vercel.app/api/generate/index.py", {
+      const response = await fetch("https://config-parser-sepia.vercel.app/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
