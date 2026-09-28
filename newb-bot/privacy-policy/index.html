@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="../../size.css">
     <link rel="stylesheet" type="text/css" href="../../animation.css">
     <link rel="icon" href="../../assets/images/icons/icon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../../script.js"></script>
   </head>
   <body>
@@ -17,14 +18,16 @@
       </button>
       <p class="title">Privacy Policy</p>
     </header>
-    <main>
-      # Privacy Policy
-      <p>
-        The new provicy policy was move at <a href="https://indeeditzgab.github.io/newb-bot/newb-privacy">this link.</a>
-      </p>
-    </main>
+    <main id="content"></main>
     <footer>
       <p>Copyright © IndeedItzGab, All rights reserved.</p>
     </footer>
+    <script>
+      fetch("./content.md")
+        .then(response => response.text())
+        .then(markdown => {
+          document.getElementById("content").innerHTML = marked.parse(markdown);
+        });
+    </script>
   </body>
 </html>
